@@ -25,32 +25,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![Deploy To Azure][azure-schield]][azure-url]
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/AllgeierSchweiz/azure-data-lakehouse">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/AllgeierSchweiz/azure-data-lakehouse"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/AllgeierSchweiz/azure-data-lakehouse">View Demo</a>
-    ·
-    <a href="https://github.com/AllgeierSchweiz/azure-data-lakehouse/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/AllgeierSchweiz/azure-data-lakehouse/issues">Request Feature</a>
-  </p>
-</div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -81,9 +55,9 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Azure Resource Deployment
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Deploy To Azure][azure-schield]][azure-url]
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
