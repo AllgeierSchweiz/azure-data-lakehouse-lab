@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Azure Resource Deployment
 
-You will create the Azure Resources required to set up the data lakehouse using a Azure Resource Management (ARM) template. This template helps create the required Azure resources more efficiently.
+You will create the Azure Resources required to set up the data lakehouse using a Azure Resource Management (ARM) template.
 
 [![Deploy To Azure][azure-schield]][azure-url]
 
