@@ -25,7 +25,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Falxdean%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.synapse%2Fsynapse-poc%2Fazuredeploy.json) 
+[![Deploy To Azure][azure-schield]][azure-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -251,6 +251,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/AllgeierSchweiz/azure-data-lakehouse/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nicolas-a-rehder/
+[azure-schield]: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true
+[azure-url]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Falxdean%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.synapse%2Fsynapse-poc%2Fazuredeploy.json
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
