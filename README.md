@@ -57,6 +57,8 @@
 <!-- ABOUT THE PROJECT -->
 ## Azure Resource Deployment
 
+You will create the Azure Resources required to set up the data lakehouse using a Azure Resource Management (ARM) template. This template helps create the required Azure resources more efficiently.
+
 [![Deploy To Azure][azure-schield]][azure-url]
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
