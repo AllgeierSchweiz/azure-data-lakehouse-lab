@@ -59,7 +59,7 @@ In this tutorial, we will be using Microsoft Azure.
 
 The architecture setup will follow the workflow of the diagram below:
 
-
+![Synapse Analytics](images/Data-Lakehouse-Architecture.png)
 
 The data stored in the data lake will be organized using the medallion structure. This design uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. These three layers are: bronze (raw), silver (transformed and enriched), and gold (aggregated).
 The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
