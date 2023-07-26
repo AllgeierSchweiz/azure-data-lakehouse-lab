@@ -37,7 +37,7 @@ This template deploys the following:
   - (OPTIONAL) Allows All connections in by default (Firewall IP Addresses)
   - Allows Azure Services to access the workspace by default  
 - Apache Spark Pool
-  - Spark version 3.3
+  - [Spark version 3.3](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-33-runtime)
   - Auto-paused set to 15 minutes of idling
 - Azure Data Lake Storage Gen2 account
   - Azure Synapse Workspace identity given Storage Blob Data Contributor to the Storage Account
