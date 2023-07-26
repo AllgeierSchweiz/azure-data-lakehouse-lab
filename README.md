@@ -73,7 +73,7 @@ It should also be noted that there are other parquet based open-source protocols
 
 ![ProvidersFormats](images/Providers-Formats.png)
 
-## Architecture
+## Data Lakehouse Architecture
 
 The architecture setup will follow the workflow of the diagram below:
 
