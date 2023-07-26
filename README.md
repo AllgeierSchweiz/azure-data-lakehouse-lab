@@ -124,7 +124,7 @@ The most important benefits include:
 - Pay only for what is needed (pause consumption)
 - Independently scale storage from compute
 
-For those of you not familiar with Microsoft Azure, the Google Cloud Platform and Amazon Web Services equivalent to Azure Synapse is Google Big Query and Amazon Athena.
+For those of you unfamiliar with Microsoft Azure, the Google Cloud Platform and Amazon Web Services equivalent to Azure Synapse is Google Big Query and Amazon Athena.
 
 ![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
 
