@@ -89,6 +89,8 @@ The complete step-by-step documentation can be found as a PDF file in the link b
 
 _For more examples, please refer to the [Documentation](documentation/Workshop - Creating a Modern Data Lakehouse with Azure Synapse.pdf)
 
+<a href="/documentation/Workshop - Creating a Modern Data Lakehouse with Azure Synapse.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
