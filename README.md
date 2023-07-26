@@ -73,6 +73,8 @@ It should also be noted that there are other parquet based open-source protocols
 
 ![ProvidersFormats](images/Providers-Formats.png)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Data Lakehouse Architecture
 
 The architecture setup will follow the workflow of the diagram below:
@@ -94,7 +96,7 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- USAGE EXAMPLES -->
+<!-- FILES -->
 ## Documentation, Data & Support Files
 
 The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip). Download and unzip the file on your local computer.
@@ -138,7 +140,7 @@ Nicolas Rehder - nrehder@allgeier.ch
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- REFERENCES -->
 ## References
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
