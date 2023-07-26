@@ -67,15 +67,17 @@ Most people who work with data management systems have heard of the open-source 
 
 Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format that supports ACID transactions, time travel, and concurrency control, as well as optimizations to improve query performance. These features enable business intelligence (BI) and machine learning (ML) on all data.
 
-It should also be noted that there are other parquet based open-source protocols such as Apache Hudi and Apache Iceberg.
+![Challenges](images/Delta-Lake-Challenges.png)
 
+It should also be noted that there are other parquet based open-source protocols such as Apache Hudi and Apache Iceberg. In the case of Azure Synapse, the out-of-the-box Data Lakehouse format is Delta Lake, however, With additional configuration, these other procotols may also be used.
 
+![ProvidersFormats](images/Providers-Formats.png)
 
 ## Architecture
 
 The architecture setup will follow the workflow of the diagram below:
 
-![Synapse Analytics](images/Data-Lakehouse-Architecture.png)
+![Architecture](images/Data-Lakehouse-Architecture.png)
 
 The data stored in the data lake will be organized using the medallion structure. 
 
