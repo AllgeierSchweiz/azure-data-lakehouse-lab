@@ -65,7 +65,9 @@ In this tutorial, we will be using Microsoft Azure.
 
 Most people who work with data management systems have heard of the open-source file format called parquet.
 
-Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format that supports ACID transactions, time travel, and concurrency control, as well as optimizations to improve query performance. These features enable business intelligence (BI) and machine learning (ML) on all data.
+Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format. The most important features that Delta Lake offers are: **ACID transactions, time travel, and concurrency control**, as well as **optimizations** to improve query performance. 
+
+These features enable both business intelligence (BI) and machine learning (ML) capabilties on all data.
 
 ![Challenges](images/Delta-Lake-Challenges.png)
 
