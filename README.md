@@ -71,9 +71,9 @@ The data stored in the data lake will be organized using the medallion structure
 
 The medallion structure uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. The three layers are: 
 
--bronze (raw)
--silver (transformed and enriched)
- -gold (aggregated)
+- Bronze (raw)
+- Silver (transformed and enriched)
+- Gold (aggregated)
  
 The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
 
@@ -85,7 +85,11 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 <!-- USAGE EXAMPLES -->
 ## Documentation & Support Files
 
-The complete step-by-step documentation to this workshop can be found as a PDF file [here](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+The complete workshop, with all the necessary files can be found here.
+
+The most important individual files can also be found directly on this repository (see links below).
+
+The step-by-step tutorial to this workshop can be found [here](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
 Additionally, there are support files that assist in setting up the architecture.
 
