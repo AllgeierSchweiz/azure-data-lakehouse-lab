@@ -61,6 +61,8 @@ You will create the Azure Resources required to set up the data lakehouse using 
 
 [![Deploy To Azure][azure-schield]][azure-url]
 
+![Synapse Analytics](images/Data-Lakehouse.png)
+
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
