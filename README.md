@@ -91,26 +91,26 @@ The most important individual files can also be found directly on this repositor
 
 **Workshop Tutorial**
 
-[Documentation](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [Documentation](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
 **Data**
 
-[FactProductCategoryPredictions](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
-[FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [FactProductCategoryPredictions](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
 **Data Changes**
 
-[FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
 **Azure Synapse Pipeline**
 
-[Dataflow](documentation/support/pipeline/TransformDeltaFormat.zip)
+- [Dataflow](documentation/support/pipeline/TransformDeltaFormat.zip)
 
 **Azure Synapse Notebooks**
 
-[Setup Bronze Database](documentation/support/notebooks/Setup-Bronze-Database.sql)
-[Setup Silver Database](documentation/support/notebooks/Setup-Silver-Database.sql)
-[Setup Gold Database](documentation/support/notebooks/Setup-Gold-Database.sql)
+- [Setup Bronze Database](documentation/support/notebooks/Setup-Bronze-Database.sql)
+- [Setup Silver Database](documentation/support/notebooks/Setup-Silver-Database.sql)
+- [Setup Gold Database](documentation/support/notebooks/Setup-Gold-Database.sql)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
