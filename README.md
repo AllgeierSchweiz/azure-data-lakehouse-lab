@@ -83,12 +83,11 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Documentation & Support Files
 
-The complete step-by-step documentation can be found as a PDF file in the link below.
+The complete step-by-step documentation can be found as a PDF file [here](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
-_For more examples, please refer to the [Documentation](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
-
+The support files made up of the Dataflow template and Azure synpase notebook scripts can be found here. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
