@@ -21,7 +21,11 @@
 # Creating a Modern Data Lakehouse with Azure Synapse
 ## Azure Resource Deployment
 
-This Data Lakehouse architecture uses Azure Synapse Analytics, Azure Data Lake Storage Gen2 (ADLS) and an Apache Spark pool. These Azure resources are provisioned using Infrastructure as Code (IaC) with a Azure Resource Management (ARM) template.
+This Data Lakehouse architecture uses Azure Synapse Analytics, Azure Data Lake Storage Gen2 (ADLS) and an Apache Spark pool. 
+
+These Azure resources are provisioned using Infrastructure as Code (IaC) with a Azure Resource Management (ARM) template.
+
+Click the button below to start the deployment process.
 
 [![Deploy To Azure][azure-schield]][azure-url]
 
