@@ -67,9 +67,17 @@ The architecture setup will follow the workflow of the diagram below:
 
 ![Synapse Analytics](images/Data-Lakehouse-Architecture.png)
 
-The data stored in the data lake will be organized using the medallion structure. This design uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. These three layers are: bronze (raw), silver (transformed and enriched), and gold (aggregated).
+The data stored in the data lake will be organized using the medallion structure. 
+
+The medallion structure uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. The three layers are: 
+
+-bronze (raw)
+-silver (transformed and enriched)
+ -gold (aggregated)
+ 
 The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
-Using Synapse Notebooks the data can be queried with the provisioned Serverless Pools. The data available in the silver and gold layers are made available as Delta Tables in a Lake Database using notebook scripts written in SparkSQL or PySpark.
+
+With Synapse Notebooks the data in each layer can be queried with the provisioned Serverless Pools. The data available in the silver and gold layers are made available as Delta Tables in a Lake Database using notebook scripts written in SparkSQL or PySpark.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +85,7 @@ Using Synapse Notebooks the data can be queried with the provisioned Serverless 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The complete step-by-step documentation can be found as a PDF file in the link below.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
