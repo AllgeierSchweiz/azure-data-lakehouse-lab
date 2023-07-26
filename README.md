@@ -242,7 +242,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nicolas-a-rehder/
 [azure-schield]: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true
-[azure-url]: https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse/main/azuredeploy.json?token=GHSAT0AAAAAACFC5FOU4EWPOCNFW4B6RSJ6ZGA7UJQ
+[azure-url]: https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse/main/azuredeploy.json
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
