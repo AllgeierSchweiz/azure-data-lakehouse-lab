@@ -55,6 +55,8 @@ This architecture can be created using several cloud service providers such as: 
 
 In this tutorial, we will be using Microsoft Azure.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Architecture
 
 The architecture setup will follow the workflow of the diagram below:
@@ -65,8 +67,7 @@ The data stored in the data lake will be organized using the medallion structure
 The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
 Using Synapse Notebooks the data can be queried with the provisioned Serverless Pools. The data available in the silver and gold layers are made available as Delta Tables in a Lake Database using notebook scripts written in SparkSQL or PySpark.
 
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
