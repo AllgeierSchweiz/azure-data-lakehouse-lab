@@ -128,6 +128,8 @@ For those of you not familiar with Microsoft Azure, the Google Cloud Platform an
 
 ![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- FILES -->
 ## Documentation, Data & Support Files
 
