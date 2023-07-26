@@ -61,6 +61,16 @@ In this tutorial, we will be using Microsoft Azure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Delta Lake to the Rescue!
+
+Most people who work with data management systems have heard of the open-source file format called parquet.
+
+Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format that supports ACID transactions, time travel, and concurrency control, as well as optimizations to improve query performance. These features enable business intelligence (BI) and machine learning (ML) on all data.
+
+It should also be noted that there are other parquet based open-source protocols such as Apache Hudi and Apache Iceberg.
+
+
+
 ## Architecture
 
 The architecture setup will follow the workflow of the diagram below:
