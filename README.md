@@ -114,7 +114,9 @@ Once these Delta Tables are available, they can be imported into Power BI using 
 
 Azure Synapse is a cloud data warehouse offering a unified experience for data preparation, data management, data warehousing, big data, and AI tasks.
 
-It is with this resource that we will set up the ETL pipelines and create the Lake Databases using synapse notebooks.
+It is with this resource that we will set up the ETL pipelines and create the Lake Databases using synapse notebooks with the provisoned Spark pool.
+
+For those of you not familiar with Microsoft Azure, the Google Cloud Platform and Amazon Web Services equivalent to Azure Synapse is Google Big Query and Amazon Athena.
 
 ![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
 
