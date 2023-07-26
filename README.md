@@ -87,7 +87,7 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 
 The complete step-by-step documentation can be found as a PDF file in the link below.
 
-_For more examples, please refer to the [Documentation](documentation/Workshop - Creating a Modern Data Lakehouse with Azure Synapse.pdf)
+_For more examples, please refer to the [Documentation](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
