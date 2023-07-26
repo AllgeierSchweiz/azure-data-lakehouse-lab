@@ -116,6 +116,14 @@ Azure Synapse is a cloud data warehouse offering a unified experience for data p
 
 It is with this resource that we will set up the ETL pipelines and create the Lake Databases using synapse notebooks with the provisoned Spark pool.
 
+The most important benefits include:
+
+- Low implementation and maintenance costs
+- Low storage costs
+- No infrastructure to manage
+- Pay only for what is needed (pause consumption)
+- Independently scale storage from compute
+
 For those of you not familiar with Microsoft Azure, the Google Cloud Platform and Amazon Web Services equivalent to Azure Synapse is Google Big Query and Amazon Athena.
 
 ![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
