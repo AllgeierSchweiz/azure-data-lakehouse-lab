@@ -37,7 +37,7 @@ This template deploys the following:
     - A new File System inside the Storage Account to be used by Azure Synapse
 - Grants the Workspace identity CONTROL to all SQL pools and SQL on-demand pool
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
