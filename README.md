@@ -72,6 +72,10 @@ These features enable both business intelligence (BI) and machine learning (ML) 
 
 ![Challenges](images/Delta-Lake-Challenges.png)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Providers & Data Formats
+
 It should also be noted that there are other parquet based open-source protocols such as Apache Hudi and Apache Iceberg. 
 
 In the case of Azure Synapse or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake, however, With additional configuration, these other procotols may also be implemented. 
