@@ -21,7 +21,7 @@
 # Creating a Modern Data Lakehouse with Azure Synapse
 ## Azure Resource Deployment
 
-You will create the Azure Resources required to set up the data lakehouse using a Azure Resource Management (ARM) template.
+This Data Lakehouse architecture uses Azure Synapse Analytics, Azure Data Lake Storage Gen2 (ADLS) and an Apache Spark pool. These Azure resources are provisioned using Infrastructure as Code (IaC) with a Azure Resource Management (ARM) template.
 
 [![Deploy To Azure][azure-schield]][azure-url]
 
@@ -43,10 +43,30 @@ This template deploys the following:
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## What is a Data Lakehouse?
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+A Data Lakehouse is a data management architecture that combines the key advantages of data lakes and data warehouses into one. 
+
+What makes the Data Lakehouse so special is that the data lake essentially acts as the data warehouse. In other words, a relational database layer is added over the data in a data lake. By storing the data in the Delta Lake format, important functionalities such as ACID compliance, schema enforcement and layout optimization, that were previously only available in data warehouses, now become available on the data lake. This allows you to query the data directly on the data lake, unlike traditional data warehouses, where the data would first need to be stored on disk, before being available for querying.
+
+Querying the Delta Format directly on the data lake is achieved by using a serverless pool. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of lake databases and traditional SQL objects within those databases such as schemas, external tables and views.
+
+This architecture can be created using several cloud service providers such as: Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake, to name a few.
+
+In this tutorial, we will be using Microsoft Azure.
+
+## Architecture
+
+The architecture setup will follow the workflow of the diagram below:
+
+
+
+The data stored in the data lake will be organized using the medallion structure. This design uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. These three layers are: bronze (raw), silver (transformed and enriched), and gold (aggregated).
+The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
+Using Synapse Notebooks the data can be queried with the provisioned Serverless Pools. The data available in the silver and gold layers are made available as Delta Tables in a Lake Database using notebook scripts written in SparkSQL or PySpark.
+
+
+
 
 ### Prerequisites
 
