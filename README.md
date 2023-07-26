@@ -55,6 +55,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
+# Creating a Modern Data Lakehouse
 ## Azure Resource Deployment
 
 You will create the Azure Resources required to set up the data lakehouse using a Azure Resource Management (ARM) template.
