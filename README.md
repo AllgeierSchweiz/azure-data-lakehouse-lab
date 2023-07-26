@@ -85,9 +85,9 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 <!-- USAGE EXAMPLES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found here.
+The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip)
 
-The most important individual files can also be found directly on this repository (see links below).
+Individual files can also be found directly on this repository (see links below).
 
 **Workshop Tutorial**
 
@@ -95,12 +95,12 @@ The most important individual files can also be found directly on this repositor
 
 **Data**
 
-- [FactProductCategoryPredictions](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
-- [FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [FactProductCategoryPredictions](data/FactProductCategoryPredictions.csv)
+- [FactProductSales](data/FactProductSales.csv)
 
 **Data Changes**
 
-- [FactProductSales](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [FactProductSales](data/changes/FactProductSales.csv)
 
 **Azure Synapse Pipeline**
 
