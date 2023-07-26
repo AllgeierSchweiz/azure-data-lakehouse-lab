@@ -64,7 +64,18 @@ You will create the Azure Resources required to set up the data lakehouse using 
 
 ![Synapse Analytics](images/Data-Lakehouse.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This template deploys the following:
+
+- An Azure Synapse Workspace
+  - (OPTIONAL) Allows All connections in by default (Firewall IP Addresses)
+  - Allows Azure Services to access the workspace by default  
+- Apache Spark Pool
+  - Auto-paused set to 15 minutes of idling
+- Azure Data Lake Storage Gen2 account
+  - Azure Synapse Workspace identity given Storage Blob Data Contributor to the Storage Account
+    - A new File System inside the Storage Account to be used by Azure Synapse
+- Grants the Workspace identity CONTROL to all SQL pools and SQL on-demand pool
+
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
