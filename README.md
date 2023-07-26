@@ -31,7 +31,7 @@ Click the button below to start the deployment process.
 
 ![Synapse Analytics](images/Data-Lakehouse.png)
 
-This template deploys the following:
+This template deploys the following Azure resources:
 
 - An Azure Synapse Workspace
   - (OPTIONAL) Allows All connections in by default (Firewall IP Addresses)
