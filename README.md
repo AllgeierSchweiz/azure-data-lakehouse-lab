@@ -85,9 +85,9 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 <!-- USAGE EXAMPLES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip)
+The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip). Download and unzip the file on your local computer.
 
-Individual files can also be found directly on this repository (see links below).
+The same files on the zip folder above can be found individually directly on this repository (see links below).
 
 **Workshop Tutorial**
 
