@@ -163,6 +163,9 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 * [Medallion Structure](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion)
 * [Medallion Structure Best Practices](https://piethein.medium.com/medallion-architecture-best-practices-for-managing-bronze-silver-and-gold-486de7c90055)
+* [Azure Pipelines](https://aarfahrayees.medium.com/delta-lake-26e76469322c)
+* [Data Lakehouse Strategy](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/building-the-lakehouse-implementing-a-data-lake-strategy-with/ba-p/3612291)
+* [Sql Database & Lake Database](https://learn.microsoft.com/en-us/answers/questions/784144/what-is-the-difference-between-sql-database-and-la)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
