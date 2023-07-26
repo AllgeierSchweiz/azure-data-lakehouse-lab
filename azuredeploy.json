@@ -46,6 +46,13 @@
         "description": "This parameter will determine the node size if SparkDeployment is true"
       }
     },
+    "sparkVersion": {
+      "type": "string",
+      "defaultValue": "3.3",
+      "metadata": {
+        "description": "This parameter sets the spark version used by the Spark pool"
+      }
+    },
     "deploymentType": {
       "type": "string",
       "defaultValue": "poc",
@@ -189,7 +196,7 @@
           "enabled": true,
           "delayInMinutes": 15
         },
-        "sparkVersion": "3.3"
+        "sparkVersion": "[parameters('sparkVersion')]"
       }
     },
     {
