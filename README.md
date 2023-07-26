@@ -110,6 +110,13 @@ Once these Delta Tables are available, they can be imported into Power BI using 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Azure Synapse Analytics
+
+Azure Synapse is a cloud data warehouse offering a unified experience for data preparation, data management, data warehousing, big data, and AI tasks.
+
+It is with this resource that we will set up the ETL pipelines and create the Lake Databases using synapse notebooks.
+
+![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
 
 <!-- FILES -->
 ## Documentation, Data & Support Files
