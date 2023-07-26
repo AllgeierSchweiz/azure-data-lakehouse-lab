@@ -87,7 +87,7 @@ With Synapse Notebooks the data in each layer can be queried with the provisione
 
 The complete step-by-step documentation to this workshop can be found as a PDF file [here](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
 
-Additionally, there are support files that assist in setting up the architecture. These files are as follows:
+Additionally, there are support files that assist in setting up the architecture.
 
 **Azure Synapse Pipeline**
 
@@ -96,6 +96,8 @@ Additionally, there are support files that assist in setting up the architecture
 **Azure Synapse Notebooks**
 
 [Setup Bronze Database](documentation/support/notebooks/Setup-Bronze-Database.sql)
+[Setup Silver Database](documentation/support/notebooks/Setup-Silver-Database.sql)
+[Setup Gold Database](documentation/support/notebooks/Setup-Gold-Database.sql)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -104,9 +106,9 @@ Additionally, there are support files that assist in setting up the architecture
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+If there are any questions, feel free to reach out!
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Nicolas Rehder - nrehder@allgeier.ch
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
