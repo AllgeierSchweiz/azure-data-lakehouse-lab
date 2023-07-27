@@ -56,7 +56,7 @@ What makes the Data Lakehouse so special is that the data lake essentially acts 
 
 By additionally storing the data in the **Delta Lake** format, important functionalities such as ACID compliance, schema enforcement and layout optimization, that were previously only available in data warehouses, now become available on the data lake as well. This allows for data querying directly on the data lake. For comparison, in traditional data warehouses, the data would first need to be imported and stored on disk, before being available for querying.
 
-Querying the Delta Format directly on the data lake is achieved by using a serverless pool. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of Pyspark or Spark SQL scripts to provision lake databases and traditional SQL objects within those databases such as schemas, external tables and views directly in Azure Synapse Analytics.
+Querying the Delta Format directly on the data lake is achieved by using a **serverless pool**. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of Pyspark or Spark SQL scripts to provision lake databases and traditional SQL objects within those databases such as schemas, external tables and views directly in Azure Synapse Analytics.
 
 This architecture can be created using several cloud service providers such as: **Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake**, to name a few.
 
