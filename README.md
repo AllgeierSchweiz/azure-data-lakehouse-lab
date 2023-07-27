@@ -137,7 +137,7 @@ For those of you unfamiliar with Microsoft Azure, the Google Cloud Platform and 
 
 The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip). Download and unzip the file on your local computer.
 
-The same files on the zip folder above can be found individually directly on this repository (see links below).
+The same files in the zip folder above can also be found individually directly in this repository (see links below).
 
 **Workshop Tutorial**
 
