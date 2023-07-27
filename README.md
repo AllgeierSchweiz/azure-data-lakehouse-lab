@@ -104,11 +104,11 @@ The medallion structure uses three layers that denote the quality of the data be
  
 The data is moved from one layer to the next using Data Flows in Azure Synapse Pipelines.
 
-With Synapse Notebooks the data in each layer can be queried with the provisioned Serverless Pools. 
+With **Synapse Notebooks** the data in each layer can be queried using **SparkSQL or PySpark** with the provisioned **Serverless Spark Pool**. 
 
-The data available in the silver and gold layers are made available as Delta Tables in a Lake Database using notebook scripts written in SparkSQL or PySpark.
+The data available in the **silver and gold layers** are made available as **Delta Tables** in a **Lake Database** using **Synapse notebook scripts**.
 
-Once these Delta Tables are available, they can be imported into Power BI using the synapse serverless sql endpoint.
+Once these Delta Tables are available, they can be imported into **Power BI** using the **Synapse Serverless Sql Endpoint**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
