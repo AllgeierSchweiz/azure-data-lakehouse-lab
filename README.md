@@ -179,7 +179,7 @@ Nicolas Rehder - nrehder@allgeier.ch
 <!-- REFERENCES -->
 ## References
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+The following documentation was used to source the information contained in this workshop.
 
 * [Azure Architectures](https://learn.microsoft.com/en-us/azure/architecture/browse/)
 * [Medallion Structure](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion)
