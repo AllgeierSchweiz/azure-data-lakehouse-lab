@@ -54,7 +54,7 @@ A Data Lakehouse is a data management architecture that combines the key advanta
 
 What makes the Data Lakehouse so special is that the data lake essentially acts as the data warehouse. In other words, a relational database layer is added over the data in the data lake. 
 
-By additionally storing the data in the Delta Lake format, important functionalities such as ACID compliance, schema enforcement and layout optimization, that were previously only available in data warehouses, now become available on the data lake as well. This allows for data querying directly on the data lake, unlike traditional data warehouses, where the data would first need to be imported and stored on disk, before being available for querying.
+By additionally storing the data in the **Delta Lake** format, important functionalities such as ACID compliance, schema enforcement and layout optimization, that were previously only available in data warehouses, now become available on the data lake as well. This allows for data querying directly on the data lake. For comparison, in traditional data warehouses, the data would first need to be imported and stored on disk, before being available for querying.
 
 Querying the Delta Format directly on the data lake is achieved by using a serverless pool. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of Pyspark or Spark SQL scripts to provision lake databases and traditional SQL objects within those databases such as schemas, external tables and views directly in Azure Synapse Analytics.
 
@@ -68,7 +68,7 @@ In this tutorial, we will be using Microsoft Azure.
 
 Most people who work with data management systems have heard of the open-source file format called parquet.
 
-Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format. The most important features that Delta Lake offers are: **ACID transactions, time travel, and concurrency control**, as well as **optimizations** to improve query performance. 
+Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format. The most important features that Delta Lake offers are: **ACID transactions, time travel, schema enforcement and concurrency control**, as well as **optimizations** to improve query performance. 
 
 These features enable both business intelligence (BI) and machine learning (ML) capabilties on all data.
 
@@ -78,7 +78,7 @@ These features enable both business intelligence (BI) and machine learning (ML) 
 
 ## Providers & Data Formats
 
-It should also be noted that there are other parquet based open-source protocols such as Apache Hudi and Apache Iceberg. 
+It should also be noted that there are other parquet based open-source protocols such as **Apache Hudi** and **Apache Iceberg**. 
 
 In the case of Azure Synapse or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake, however, With additional configuration, these other procotols may also be implemented. 
 
