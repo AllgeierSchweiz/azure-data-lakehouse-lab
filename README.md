@@ -58,7 +58,7 @@ By additionally storing the data in the **Delta Lake** format, important functio
 
 Querying the Delta Format directly on the data lake is achieved by using a serverless pool. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of Pyspark or Spark SQL scripts to provision lake databases and traditional SQL objects within those databases such as schemas, external tables and views directly in Azure Synapse Analytics.
 
-This architecture can be created using several cloud service providers such as: Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake, to name a few.
+This architecture can be created using several cloud service providers such as: **Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake**, to name a few.
 
 In this tutorial, we will be using Microsoft Azure.
 
