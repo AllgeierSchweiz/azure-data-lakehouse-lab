@@ -80,9 +80,9 @@ These features enable both business intelligence (BI) and machine learning (ML) 
 
 It should also be noted that there are other parquet based open-source protocols such as **Apache Hudi** and **Apache Iceberg**. 
 
-In the case of Azure Synapse or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake, however, With additional configuration, these other procotols may also be implemented. 
+In the case of Azure Synapse or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake. It should be note, that with additional configurations, these other procotols may also be used in Azure Synapse Analytics. 
 
-These steps are outside the scope of this workshop.
+These configuration steps are outside the scope of this workshop.
 
 ![ProvidersFormats](images/Providers-Formats.png)
 
