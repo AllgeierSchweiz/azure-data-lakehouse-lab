@@ -102,7 +102,7 @@ The medallion structure uses three layers that denote the quality of the data be
 - Silver (transformed and enriched)
 - Gold (aggregated)
  
-The data is **imported, moved and transformed (ETL)** from one layer to the next using Data Flows in Azure Synapse Pipelines.
+The data is **imported, transformed and moved ** from one layer to the next using Data Flows in Azure Synapse Pipelines.
 
 With **Synapse Notebooks** the data in each layer can be queried using **SparkSQL or PySpark** with the provisioned **Serverless Spark Pool**. 
 
