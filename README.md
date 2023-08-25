@@ -158,13 +158,13 @@ The same files in the zip folder above can also be found individually directly i
 
 **Azure Synapse Pipeline**
 
-- [Dataflow](documentation/support/pipeline/TransformDeltaFormat.zip)
+- [Dataflow](support/pipeline/TransformDeltaFormat.zip)
 
 **Azure Synapse Notebooks**
 
-- [Setup Bronze Database](documentation/support/notebooks/Setup-Bronze-Database.sql)
-- [Setup Silver Database](documentation/support/notebooks/Setup-Silver-Database.sql)
-- [Setup Gold Database](documentation/support/notebooks/Setup-Gold-Database.sql)
+- [Setup Bronze Database](support/notebooks/Setup-Bronze-Database.sql)
+- [Setup Silver Database](support/notebooks/Setup-Silver-Database.sql)
+- [Setup Gold Database](support/notebooks/Setup-Gold-Database.sql)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
