@@ -139,7 +139,7 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 <!-- FILES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found [here](Modern-Data-Lakehouse.zip). Download and unzip the file on your local computer.
+The complete workshop, with all the necessary files can be found [here](Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip). Download and unzip the file on your local computer.
 
 The same files in the zip folder above can also be found individually directly in this repository (see links below).
 
