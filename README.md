@@ -57,6 +57,7 @@ The Data Lakehouse is made up of a Data Lake, that stores the data in a direct-a
 What makes the Data Lakehouse so special is that the Data Lake essentially acts as a Data Warehouse. The Serverless Pools, used to query the data, add an on-demand SQL layer on top of the Data Lake allowing for large-scale data and computational functions. For comparison, in traditional Data Warehouses, the data would first need to be imported and stored on disk, before being available for querying.
 
 By additionally storing the data in the Delta Lake format, important functionalities, that were previously only available in Data Warehouses, now also become accessible on the Data Lake. These functionalities are listed in chapter **Delta Lake to the Rescue**.
+
 The Data Lakehouse can be created using several cloud service providers such as: **Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake**, to name a few.
 
 In this tutorial, we will be using **Microsoft Azure**.
