@@ -50,41 +50,16 @@ This template deploys the following Azure resources:
 <!-- GETTING STARTED -->
 ## What is a Data Lakehouse?
 
-A Data Lakehouse is a data management architecture that combines the key advantages of data lakes and data warehouses into one. 
+A Data Lakehouse is a data management architecture that combines the key advantages of Data Lakes and Data Warehouses into one.
 
-What makes the Data Lakehouse so special is that the data lake essentially acts as the data warehouse. In other words, a relational database layer is added over the data in the data lake. 
+The Data Lakehouse is made up of a Data Lake, that stores the data in a direct-access optimized format, and Serverless Pools, that allow for queries made directly on the Data Lake.
 
-By additionally storing the data in the **Delta Lake** format, important functionalities such as ACID compliance, schema enforcement and layout optimization, that were previously only available in data warehouses, now become available on the data lake as well. This allows for data querying directly on the data lake. For comparison, in traditional data warehouses, the data would first need to be imported and stored on disk, before being available for querying.
+What makes the Data Lakehouse so special is that the Data Lake essentially acts as a Data Warehouse. The Serverless Pools, used to query the data, add an on-demand SQL layer on top of the Data Lake allowing for large-scale data and computational functions. For comparison, in traditional Data Warehouses, the data would first need to be imported and stored on disk, before being available for querying.
 
-Querying the Delta Format directly on the data lake is achieved by using a **Serverless Pool**. The serverless pool essentially adds an on demand SQL layer on top of the data lake. This in turn enables the creation of Pyspark or Spark SQL scripts to provision lake databases and traditional SQL objects within those databases such as schemas, external tables and views directly in Azure Synapse Analytics.
+By additionally storing the data in the Delta Lake format, important functionalities, that were previously only available in Data Warehouses, now also become accessible on the Data Lake. These functionalities are listed in chapter **Delta Lake to the Rescue**.
+The Data Lakehouse can be created using several cloud service providers such as: **Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake**, to name a few.
 
-This architecture can be created using several cloud service providers such as: **Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform and Snowflake**, to name a few.
-
-In this tutorial, we will be using Microsoft Azure.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Delta Lake to the Rescue!
-
-Most people who work with data management systems have heard of the open-source file format called parquet.
-
-Delta Lake, also called Delta, is an open source file protocol that uses a versioned Parquet file format. The most important features that Delta Lake offers are: **ACID transactions, time travel, schema enforcement and concurrency control**, as well as **optimizations** to improve query performance. 
-
-These features enable both business intelligence (BI) and machine learning (ML) capabilties on all data.
-
-![Challenges](images/Delta-Lake-Challenges.png)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Providers & Data Formats
-
-It should also be noted that there are other parquet based open-source protocols such as **Apache Hudi** and **Apache Iceberg**. 
-
-In the case of Azure Synapse or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake. With additional configurations Apache Hudi and Apache Iceberg may also be used in Azure Synapse Analytics. 
-
-These configuration steps are outside the scope of this workshop.
-
-![ProvidersFormats](images/Providers-Formats.png)
+In this tutorial, we will be using **Microsoft Azure**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,41 +69,70 @@ The architecture setup will follow the workflow of the diagram below:
 
 ![Architecture](images/Data-Lakehouse-Architecture.png)
 
-The data stored in the data lake will be organized using the medallion structure. 
+The Data Lakehouse in this tutorial will be built using **Azure Synapse Analytics, Azure Data Lake Storage Gen2 (ADLS) and an Apache Spark Pool (Spark Version 3.3)**.
 
-The medallion structure uses three layers that denote the quality of the data being stored. Each layer is a directory inside the Azure Data Lake Storage. The three layers are: 
+**Note: As of Febuary 23, 2023, Spark Version 3.3 is the highest GA version in Azure Synapse Analytics. Always check the latest supported Azure Synapse runtime releases and adjust the version accordinly, to access the latest Apache Spark features.**
+
+The Azure resources are provisioned using Infrastructure as Code (IaC) with a Azure Resource Management (ARM) template.
+
+The data stored in the Azure Data Lake Storage will be organized using the medallion structure.
+
+The medallion structure uses three layers that denote the quality of the data being stored. Each layer is a folder directory inside the Azure Data Lake Storage. The three layers are:
 
 - Bronze (raw)
 - Silver (transformed and enriched)
 - Gold (aggregated)
  
-The data is **imported, transformed and moved** from one layer to the next using Data Flows in Azure Synapse Pipelines.
+The data is imported, transformed and moved from one layer to the next using Data Flows in Azure Synapse Pipelines. Data Flows allow for the development of data transformation logic without writing code. For those of you familiar with Data Flows in Azure Data Factory, these are essentially the same objects, but created directly in Azure Synapse Analytics.
 
-With **Synapse Notebooks** the data in each layer can be queried using **SparkSQL or PySpark** with the provisioned **Serverless Spark Pool**. 
+**Note: The data transformation logic can also be created outside of Data Flows, directly in Synapse Notebooks using PySpark and / or Spark SQL.**
 
-The data available in the **silver and gold layers** are made available as **Delta Tables** in a **Lake Database** using **Synapse notebook scripts**.
+Once the Data Flow activities have been finalized, the data in the Data Lake can be queried directly from each medallion layer using a Serverless Pool.
 
-Once these Delta Tables are available, they can be imported into **Power BI** using the **Synapse Serverless Sql Endpoint**.
+**Note: There are two types of Serverless Pools: a Serverless SQL Pool, which is automatically provisioned when creating a Azure Synapse Analytics workspace, and a Serverless Spark Pool, which needs to be provisioned manually. Both Serverless Pools can query the data on the Data Lake, but only the Serverless Spark Pool can take advantage of the Delta Lake format features.**
+
+To query the data, scripts are written in Synapse Notebooks using PySpark and / or Spark SQL. Both of these languages are Spark flavours of Python and SQL. Additionally, Lake Databases and traditional SQL database objects such as: schemas, external tables and views can be created in Azure Synapse Analytics using Synapse Notebooks.
+
+**Note: Synapse Notebooks are very similar to Jupyter Notebooks. Apart from PySpark and Spark SQL. Synapse Notebook scripts can also be written in Scala, R and .NET.**
+
+Finally, the transformed data, made available in the gold layer of the medallion structure, can be used to create Delta Tables in the Lake Database. These Delta Tables can be read and imported into Power BI using a Serverless SQL Endpoint.
+
+**Note: There currently is no Serverless Spark Endpoint to connect to the Lake Database from Power BI. For the time being, only a Serverless SQL Endpoint is available, which unfortunately limits certain Spark based Delta features, such as time traveling. In the future, especially with the creation of Microsoft Fabric, this missing Endpoint will certainly become available.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Azure Synapse Analytics
+## Delta Lake to the Rescue!
 
-Azure Synapse is a cloud data warehouse offering a unified experience for data preparation, data management, data warehousing, big data, and AI tasks.
+To allow for Data Warehouse-like capabilties directly on the Data Lake and to overcome the typical challenges that Data Lakes have, a special type of data format named Delta Lake comes into play.
 
-It is with this resource that we will set up the ETL pipelines and create the Lake Databases using synapse notebooks with the provisoned Spark pool.
+Most people who work with cloud based data management systems have heard of the open-source file format called Apache Parquet (or simply, Parquet). This column-oriented data file format provides efficient data compression and enhanced performance.
 
-The most important benefits include:
+The Delta Lake file format (or simply, Delta) is an open source file protocol developed by Databricks that extends Parquet with a file-based transaction log for version control. This in turn enables the Data Warehouse-like functionalities specific to the Delta Lake protocol. The most important of those are:
 
-- Low implementation and maintenance costs
-- Low storage costs
-- No infrastructure to manage
-- Pay only for what is needed (pause consumption)
-- Independently scale storage from compute
+- ACID compliance
+- Time traveling
+- Audit history
+- Schema enforcements
+- DML operations
+- Query optimizations
 
-For those of you unfamiliar with Microsoft Azure, the Google Cloud Platform and Amazon Web Services equivalent to Azure Synapse is Google Big Query and Amazon Athena.
+These features empower both business intelligence (BI) and machine learning (ML) capabilties directly on the data stored in the Data Lake.
 
-![SynapseAnalytics](images/Azure-Synapse-Analytics.png)
+![Challenges](images/Delta-Lake-Challenges.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Other Data Format Protocols
+
+It should be noted that there are other Parquet based open-source protocols such as **Apache Hudi and Apache Iceberg**, that offer the same capabilties as Delta Lake.
+
+In the case of Azure Synapse Analytics or Microsoft in general, the out-of-the-box Data Lakehouse format is Delta Lake. This is also the case with the new all-in-one analytics solution called Microsoft Fabric, which uses a Data Lakehouse at its core, namely **OneLake**.
+
+With additional configurations Apache Hudi or Apache Iceberg may also be used in Azure Synapse Analytics. However, these configuration steps are outside the scope of this workshop.
+
+**Note: With the introduction of Universal Format (UniForm), Delta Lake can be used not only with Delta Lake tables but also with Apache Hudi and Apache Iceberg tables, unifying data regardless of the storage format.**
+
+![ProvidersFormats](images/Providers-Formats.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
