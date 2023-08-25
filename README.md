@@ -52,7 +52,7 @@ This template deploys the following Azure resources:
 
 A Data Lakehouse is a data management architecture that combines the key advantages of Data Lakes and Data Warehouses into one.
 
-The Data Lakehouse is made up of a Data Lake, that stores the data in a direct-access optimized format, and Serverless Pools, that allow for queries made directly on the Data Lake.
+The Data Lakehouse is made up of a Data Lake, that stores the data in a direct-access optimized format called Delta Lake, and Serverless Pools, that allow for queries made directly on the Data Lake.
 
 What makes the Data Lakehouse so special is that the Data Lake essentially acts as a Data Warehouse. The Serverless Pools, used to query the data, add an on-demand SQL layer on top of the Data Lake allowing for large-scale data and computational functions. For comparison, in traditional Data Warehouses, the data would first need to be imported and stored on disk, before being available for querying.
 
