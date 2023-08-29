@@ -140,13 +140,13 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 <!-- FILES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found [here][Creating-a-modern-data-lakehouse]. Download and unzip the file on your local computer.
+The complete workshop, with all the necessary files can be found [here][Creating-a-modern-data-lakehouse-zip]. Download and unzip the file on your local computer.
 
 The same files in the zip folder above can also be found individually directly in this repository (see links below).
 
 **Workshop Tutorial**
 
-- [Creating a Modern Data Lakehouse with Azure Synapse](documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf)
+- [Creating a Modern Data Lakehouse with Azure Synapse][Creating-a-modern-data-lakehouse-pdf]
 
 **Data**
 
@@ -230,4 +230,5 @@ The following documentation was used to source the information contained in this
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-[Creating-a-modern-data-lakehouse]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip
+[Creating-a-modern-data-lakehouse-zip]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip
+[Creating-a-modern-data-lakehouse-pdf]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf
