@@ -155,17 +155,17 @@ The same files in the zip folder above can also be found individually directly i
 
 **Data Changes**
 
-- [FactProductSales](data/changes/FactProductSales.csv)
+- [FactProductSales][FactProductSales-changes-csv]
 
 **Azure Synapse Pipeline**
 
-- [Dataflow](support/pipeline/TransformDeltaFormat.zip)
+- [Dataflow][Dataflow-zip]
 
 **Azure Synapse Notebooks**
 
-- [Setup Bronze Database](support/notebooks/Setup-Bronze-Database.sql)
-- [Setup Silver Database](support/notebooks/Setup-Silver-Database.sql)
-- [Setup Gold Database](support/notebooks/Setup-Gold-Database.sql)
+- [Setup Bronze Database][Setup Bronze Database-sql]
+- [Setup Silver Database][Setup Silver Database-ipynb]
+- [Setup Gold Database][Setup Gold Database-ipynb]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -234,3 +234,8 @@ The following documentation was used to source the information contained in this
 [Creating-a-modern-data-lakehouse-pdf]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf
 [FactProductCategoryPredictions-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductCategoryPredictions.csv
 [FactProductSales-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductSales.csv
+[FactProductSales-changes-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/changes/FactProductSales.csv
+[Dataflow-zip]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/support/pipeline/TransformDeltaFormat.zip
+[Setup Bronze Database-sql]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/support/notebooks/Setup-Bronze-Database.sql
+[Setup Silver Database-ipynb]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/support/notebooks/Setup-Silver-Database.ipynb
+[Setup Gold Database-ipynb]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/support/notebooks/Setup-Gold-Database.ipynb
