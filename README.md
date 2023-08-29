@@ -150,8 +150,8 @@ The same files in the zip folder above can also be found individually directly i
 
 **Data**
 
-- [FactProductCategoryPredictions](data/FactProductCategoryPredictions.csv)
-- [FactProductSales](data/FactProductSales.csv)
+- [FactProductCategoryPredictions][FactProductCategoryPredictions-csv]
+- [FactProductSales][FactProductSales-csv]
 
 **Data Changes**
 
@@ -232,3 +232,5 @@ The following documentation was used to source the information contained in this
 [JQuery-url]: https://jquery.com 
 [Creating-a-modern-data-lakehouse-zip]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip
 [Creating-a-modern-data-lakehouse-pdf]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf
+[FactProductCategoryPredictions-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductCategoryPredictions.csv
+[FactProductSales-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductSales.csv
