@@ -146,7 +146,7 @@ The same files in the zip folder above can also be found individually directly i
 
 **Workshop Tutorial**
 
--[Creating a modern Data Lakehouse](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip)
+- [Creating a modern Data Lakehouse](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip)
 
 **Data**
 
