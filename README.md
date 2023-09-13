@@ -146,16 +146,16 @@ The same files in the zip folder above can also be found individually directly i
 
 **Workshop Tutorial**
 
--[Creating a modern Data Lakehouse][https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip]
+-[Creating a modern Data Lakehouse](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip)
 
 **Data**
 
-- [FactProductCategoryPredictions][FactProductCategoryPredictions-csv]
-- [FactProductSales][FactProductSales-csv]
+- [FactProductCategoryPredictions](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/FactProductCategoryPredictions.csv)
+- [FactProductSales](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/FactProductSales.csv)
 
 **Data Changes**
 
-- [FactProductSales][FactProductSales-changes-csv]
+- [FactProductSales](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/changes/FactProductSales.csv)
 
 **Azure Synapse Pipeline**
 
