@@ -140,8 +140,9 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 <!-- FILES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found [here][Creating-a-modern-data-lakehouse-zip]. Download and unzip the file on your local computer.
+The complete workshop, with all the necessary files can be found in a zip file [here][Creating-a-modern-data-lakehouse-zip]. 
 
+Download and unzip the file on your local computer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
