@@ -150,16 +150,16 @@ The same files in the zip folder above can also be found individually directly i
 
 **Data**
 
-- [FactProductCategoryPredictions](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/FactProductCategoryPredictions.csv)
-- [FactProductSales](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/FactProductSales.csv)
+- [FactProductCategoryPredictions](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/FactProductCategoryPredictions.csv)
+- [FactProductSales](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/FactProductSales.csv)
 
 **Data Changes**
 
-- [FactProductSales](https://raw.githubusercontent.com/AllgeierSchweiz/azure-data-lakehouse-lab/main/data/changes/FactProductSales.csv)
+- [FactProductSales](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/changes/FactProductSales.csv)
 
 **Azure Synapse Pipeline**
 
-- [Dataflow][Dataflow-zip]
+- [Dataflow](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/support/pipeline/TransformDeltaFormat.zip)
 
 **Azure Synapse Notebooks**
 
