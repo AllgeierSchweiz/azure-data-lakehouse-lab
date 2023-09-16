@@ -142,31 +142,6 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 
 The complete workshop, with all the necessary files can be found [here][Creating-a-modern-data-lakehouse-zip]. Download and unzip the file on your local computer.
 
-The same files in the zip folder above can also be found individually directly in this repository (see links below).
-
-**Workshop Tutorial**
-
-- [Creating a Modern Data Lakehouse](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip)
-
-**Data**
-
-- [FactProductCategoryPredictions](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/FactProductCategoryPredictions.csv)
-- [FactProductSales](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/FactProductSales.csv)
-
-**Data Changes**
-
-- [FactProductSales](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/data/changes/FactProductSales.csv)
-
-**Azure Synapse Pipeline**
-
-- [Dataflow](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/support/pipeline/TransformDeltaFormat.zip)
-
-**Azure Synapse Notebooks**
-
-- [Setup Bronze Database][Setup Bronze Database-sql]
-- [Setup Silver Database][Setup Silver Database-ipynb]
-- [Setup Gold Database][Setup Gold Database-ipynb]
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
