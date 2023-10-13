@@ -1,6 +1,4 @@
-----------
-
-### Creating a Data Lakehouse with Azure Synapse Analytics (Part 4 of 5)
+# Creating a Data Lakehouse with Azure Synapse Analytics (Part 4 of 5)
 
 ![](https://cdn-images-1.medium.com/max/800/1*VHQ1XmsdtvpnaGo01JsHsg.png)
 
@@ -8,9 +6,13 @@
 
 The Lake Database is a new way of defining data structures on data that is hosted on Azure Data Lake Storage and processed with Azure Synapse. This Database type is synchronized between the Spark and the SQL Serverless engines in Azure Synapse and allows interoperability between the different compute engines (Spark and SQL). It is within this database type that you can create and query delta formatted data using delta tables.
 
+----------
+
 #### 1.1 Create a Synapse Notebook
 
 We can now create delta tables based on the delta formatted data in the silver-container and the gold-container using the Apache Spark Pool.
+
+----------
 
 **1.1.1 Silver Database**
 
