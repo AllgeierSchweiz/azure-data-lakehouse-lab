@@ -1,5 +1,3 @@
-----------
-
 ### Creating a Data Lakehouse with Azure Synapse Analytics (Part 5 of 5)
 
 ![](https://cdn-images-1.medium.com/max/800/1*VHQ1XmsdtvpnaGo01JsHsg.png)
