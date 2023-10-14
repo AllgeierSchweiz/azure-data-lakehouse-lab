@@ -14,6 +14,8 @@ The following series showcases how to create a Data Lakehouse using Microsoft Az
 -   [**Part 4**](https://nicolas-rehder.medium.com/creating-a-data-lakehouse-with-azure-synapse-analytics-part-4-of-5-1fd7b2e6f7c9)  will show the readers how to create Synapse Notebooks in Azure Synapse Analytics and set up the Lake Databases as well as the associated Delta Tables. The reader will also use SQL code to query the Delta Table audit logs as well as implement time traveling, version restoring, z-ordering, and vaccuming commands.
 -   [**Part 5**](https://nicolas-rehder.medium.com/creating-a-data-lakehouse-with-azure-synapse-analytics-part-5-of-5-e7648d1402d2)  will show the readers how to connect the Delta Tables in the Synapse Analytics Gold Lake Database with Power BI using the Azure Synapse Serverless Endpoint.
 
+----------
+
 ### 2. What is a Data Lakehouse?
 
 A Data Lakehouse is a data management architecture that combines the key advantages of Data Lakes and Data Warehouses into one.
@@ -27,6 +29,8 @@ By additionally storing the data in the Delta Lake format, important functionali
 The Data Lakehouse can be created using several cloud service providers such as **_Microsoft Azure, Databricks, Amazon Web Services, Google Cloud Platform, and Snowflake_**, to name a few.
 
 In this tutorial, we will be using **_Microsoft Azure_**.
+
+----------
 
 ### 3. Data Lakehouse Architecture
 
@@ -62,6 +66,8 @@ Finally, the transformed data, made available in the gold layer of the medallion
 
 **_Note: There currently is no Serverless Spark Endpoint to connect to the Lake Database from Power BI. For the time being, only a Serverless SQL Endpoint is available, which unfortunately limits certain Spark-based Delta features, such as time traveling. In the future, especially with the creation of Microsoft Fabric, this missing Endpoint will certainly become available._**
 
+----------
+
 ### 4. Delta Lake to the Rescue!
 
 To allow for Data Warehouse-like capabilities directly on the Data Lake and to overcome the typical challenges that Data Lakes have, a special type of data format named Delta Lake comes into play.
@@ -81,6 +87,8 @@ These features empower both **_business intelligence (BI)_** and **_machine lear
 
 ![](https://cdn-images-1.medium.com/max/800/1*Zd7ufRtzBdKAea3x133O-g.png)
 
+----------
+
 ### **5. Other Data Format Protocols**
 
 It should be noted that there are other Parquet-based open-source protocols such as **_Apache Hudi_** and **_Apache Iceberg_**, that offer the same capabilities as Delta Lake.
@@ -93,11 +101,15 @@ With additional configurations, Apache Hudi or Apache Iceberg may also be used i
 
 ![](https://cdn-images-1.medium.com/max/800/1*QrY5MUPx2NXQOYCBZZmQYA.png)
 
+----------
+
 ### 6. Refresher on Data Warehouses and Data Lakes
 
 As mentioned before, the Data Lakehouse offers the best of two independent technologies, namely: Data Warehouses and Data Lakes.
 
 Below is a brief overview of what these two systems offer, their challenges, and how, when they’re brought together, can offset each other’s downsides.
+
+----------
 
 #### 6.1 Data Warehouses
 
@@ -115,6 +127,8 @@ However, this setup presents certain challenges:
 
 As you will see in C_hapter 6.2 Data Lakes_, a number of these challenges are addressed by the primary features that make up a Data Lake.
 
+----------
+
 #### 6.2 Data Lakes
 
 A Data Lake is a central repository that ingests **_structured, semi-structured,_** or **_unstructured_** data from multiple sources. The data is stored **_without a predefined schema_** and is made available for **_advanced analytics_**.
@@ -131,6 +145,8 @@ Nevertheless, just like the data warehouse, this setup also presents certain cha
 
 As you may have noticed in C_hapter 6.1 Data Warehouse_, a number of these challenges are addressed by the primary features that make up a Data Warehouse.
 
+----------
+
 ### 7. When Should a Data Lakehouse be Implemented?
 
 In any enterprise, it should always be evaluated whether a new data management solution such as a Data Lakehouse with any legacy provider makes sense.
@@ -145,9 +161,13 @@ Ideally, companies planning to set up a Data Lakehouse using Microsoft Azure alr
 
 The steps outlined in Part 2, 3, 4, and 5 of this series, serves as a launchpad for those who would like to set up a Proof-of-Concept (PoC) using this new data management technology in Azure.
 
+----------
+
 ### 8. Questions & Feedback?
 
 Reach out to us! We are happy to answer any questions you might have or use your feedback to optimize this series!
+
+----------
 
 ### **9. References**
 
