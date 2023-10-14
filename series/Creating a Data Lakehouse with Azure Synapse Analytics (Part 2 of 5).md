@@ -292,4 +292,4 @@ Your storage **gold-container** structure should look like this:
 
 ----------
 
-You have now finalized the required preparations to start building your Data Lakehouse on Azure Synapse Analytics. We will continue with the setup in Part 3.
+You have now finalized the required preparations to start building your Data Lakehouse on Azure Synapse Analytics. We will continue with the setup in [**Part 3**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Data%20Lakehouse%20with%20Azure%20Synapse%20Analytics%20(Part%203%20of%205).md).
