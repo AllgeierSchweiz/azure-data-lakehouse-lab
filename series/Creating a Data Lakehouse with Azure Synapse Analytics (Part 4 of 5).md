@@ -435,4 +435,4 @@ A banner should appear confirming that the content was published.
 
 ----------
 
-You have now finalized the setup of your Data Lakehouse using Azure Synapse Analytics! In Part 5 you will learn how to connect your Delta Tables in the Gold Database to Microsoft Power BI and visualize your data.
+You have now finalized the setup of your Data Lakehouse using Azure Synapse Analytics! In [**Part 5**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Data%20Lakehouse%20with%20Azure%20Synapse%20Analytics%20(Part%205%20of%205).md) you will learn how to connect your Delta Tables in the Gold Database to Microsoft Power BI and visualize your data.
