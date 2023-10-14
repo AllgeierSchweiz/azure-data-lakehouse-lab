@@ -9,7 +9,7 @@ The following prerequisites must be met to successfully starting this series:
 -   You must be connected to the internet.
 -   You should use two monitors **(HIGHLY RECOMMENDED)**
 -   You have Microsoft Edge or any other reliable browser installed.
--   You must have created a [free Azure account](https://azure.microsoft.com/en-us/free/) (see [**Creating a Free Azure Account**](https://nicolas-rehder.medium.com/creating-a-free-azure-account-ebd9bec212fc)) or have access to an Azure account.
+-   You must have created a [free Azure account](https://azure.microsoft.com/en-us/free/) (see [**Creating a Free Azure Account**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md)) or have access to an Azure account.
 -   You must be the **Owner** of the Azure subscription (this is relevant if you are using a company Azure Subscription).
 -   You should have [Power BI Desktop](https://apps.microsoft.com/store/detail/power-bi/9NBLGGGZLXN1?hl=de-ch&gl=ch&rtc=1) installed **(OPTIONAL)**.
 
@@ -100,7 +100,7 @@ You will now create the Azure Resources required to set up the Data Lakehouse. W
 
 ![](https://cdn-images-1.medium.com/max/800/1*sTDANSrJrOoTzbeiuwGNzQ.png)
 
-**_NOTE: To log into the Azure Portal using the username and password you created for your free Azure account in the series_**  [**_Creating a Free Azure Account_**](https://nicolas-rehder.medium.com/creating-a-free-azure-account-ebd9bec212fc) **_or your own Azure account._**
+**_NOTE: To log into the Azure Portal using the username and password you created for your free Azure account in the series_**  [**_Creating a Free Azure Account_**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md) **_or your own Azure account._**
 
 Once the template opens, there will be several entries that need to be manually input and/or changed.
 
