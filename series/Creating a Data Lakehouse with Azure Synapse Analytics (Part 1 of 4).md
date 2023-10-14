@@ -30,6 +30,7 @@ We can now create delta tables based on the delta formatted data in the silver-c
 
 The Spark Notebooks allow you to run code using Spark flavors of SQL, Python, R, and Scala programming languages. In this example, we will focus on SQL and Python.
 
+
 **1.1.1.1 Silver Lake Database**
 
 You will start by creating a silver database using Spark SQL.
