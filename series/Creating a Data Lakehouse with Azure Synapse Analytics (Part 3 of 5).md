@@ -451,4 +451,4 @@ We uploaded our changed data into the bronze-container. Let’s trigger our Azur
 
 ----------
 
-You have now finalized importing, configuring, and triggering the Data Flow pipelines in Azure Synapse Analytics. These pipelines will perform the ETL process and sink your data into your Azure Storage in the Delta Format. In Part 4 you will use this Delta formatted data to create Lake Databases and the associated Delta Tables.
+You have now finalized importing, configuring, and triggering the Data Flow pipelines in Azure Synapse Analytics. These pipelines will perform the ETL process and sink your data into your Azure Storage in the Delta Format. In [**Part 4**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Data%20Lakehouse%20with%20Azure%20Synapse%20Analytics%20(Part%204%20of%205).md) you will use this Delta formatted data to create Lake Databases and the associated Delta Tables.
