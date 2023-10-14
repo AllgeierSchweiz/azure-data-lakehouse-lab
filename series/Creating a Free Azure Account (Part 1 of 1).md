@@ -1,4 +1,4 @@
-# Creating a Free Azure Account
+# Creating a Free Azure Account (Part 1 of 1)
 
 ![](https://cdn-images-1.medium.com/max/800/1*QgovXHHDJElg4x2NWaKMAA.jpeg)
 
