@@ -8,6 +8,8 @@ To create Azure resources an Azure account needs to be created to log into the [
 
 Microsoft offers the possibility to create a free Azure account with 200 USD worth of Azure credits, that can be used to provision Azure resources. This free Azure account is valid for 30 days.
 
+----------
+
 ### 2. Preparations
 
 #### 2.1 Email Address
@@ -18,15 +20,21 @@ The account creation steps will provision a new personal email address for you.
 
 (E.g., yournewemail@outlook.com).
 
+----------
+
 #### 2.2 Phone Number
 
 To verify your account, you will need a phone number that can receive an SMS message. This message will contain a code to activate your account.
+
+----------
 
 #### 2.3 Credit or Debit Card
 
 You will also require **a credit or debit card** to finalize the account creation.
 
 **_NOTE:_**  **_Nothing will be charged to your card._**  **_After the USD 200 credit is used, Microsoft will ask if you want to continue with pay-as-you-go pricing, to keep using the Azure resources. You can decline this offer. Once declined, all resources will be stopped._**
+
+----------
 
 ### 3. Creating a Free Azure Account
 
@@ -92,5 +100,7 @@ Once selected, your free Azure account will be created.
 After you’re finished, you will be directed to the Azure Portal.
 
 **_NOTE: Please remember your newly created email and password, these are tied to your account. You will need this information to log into the Azure Portal._**
+
+----------
 
 Congratulations! You’re now ready to explore the different products and services that Azure has to offer!
