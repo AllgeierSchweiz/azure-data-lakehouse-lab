@@ -55,6 +55,8 @@ We require the SQL Serverless Pool endpoint for Azure Synapse.
 -   **Copy** the Serverless SQL endpoint.
 -   Go back to your Power BI Desktop application and paste the Serverless SQL endpoint in the (1) **Server** field and select (2) **OK**.
 
+**_Note: Your SQL endpoint name will be different._**
+
 ![](https://cdn-images-1.medium.com/max/800/1*imL_WW3sDWGdxtQ7vj4dqA.png)
 
 -   A new window will open asking for the credentials. Select **Microsoft account**, select **Sign in,** and select the **Connect** button.
