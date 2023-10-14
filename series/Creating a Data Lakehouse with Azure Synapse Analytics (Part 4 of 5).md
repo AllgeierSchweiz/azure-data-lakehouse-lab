@@ -30,6 +30,7 @@ We can now create delta tables based on the delta formatted data in the silver-c
 
 The Spark Notebooks allow you to run code using Spark flavors of SQL, Python, R, and Scala programming languages. In this example, we will focus on SQL and Python.
 
+----------
 
 **1.1.1.1 Silver Lake Database**
 
@@ -92,6 +93,8 @@ This URI will be used in the **LOCATION** variable in the next code script.
 
 **_NOTE: Do NOT copy the URI abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/ you see above. This will NOT work for you. You must input the names of the container and storage account you provisioned as described above._**
 
+----------
+
 **1.1.1.3 Silver Lake Database Delta Tables**
 
 -   Go back to your Azure Synapse Workspace.
@@ -107,7 +110,7 @@ LOCATION 'abfss://container_name@storage_account_name.dfs.core.windows.net/silve
 
 **_NOTE: The %%sql command explicitly tells the notebook to use the SQL language to run the code._**
 
--   Change the **LOCATION** parameter in the SQL code above to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
+-   Change the **LOCATION** parameter in the SQL code above to your URI as described in _Chapter 1.1.2 Azure Blob File System_.
 
 ![](https://cdn-images-1.medium.com/max/800/1*3IXg1TiKNkilLVjsTk7dww.png)
 
@@ -133,6 +136,8 @@ A banner will appear confirming that the content was published.
 
 ![](https://cdn-images-1.medium.com/max/800/1*V32mMjreX3SLZE3Z5vJMFA.png)
 
+----------
+
 **1.1.1.4 Audit Logs**
 
 Delta Lake format stores data in Parquet files and information regarding DML operations in the **_delta_log** metadata folder. With this metadata available you can view audit logs and time travel between different versions of a Delta table. Time traveling can be achieved by table version or by timestamp.
@@ -153,7 +158,7 @@ In the audit log, you will see the operations we executed after manually changin
 DESCRIBE HISTORY 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/silver-container/ProductSales/';
 ```
 
--   Within the SQL code above change the **abfss URI** to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
+-   Within the SQL code above change the **abfss URI** to your URI as described in _Chapter 1.1.2 Azure Blob File System_.
 
 ![](https://cdn-images-1.medium.com/max/800/1*cel29LU3dFn5BZbamgH0ZQ.png)
 
@@ -245,7 +250,7 @@ VACUUM silver.productsales;
 
 **1.2.1 Gold Database**
 
-We will now create our gold database, where the data is made ready for consumption. The steps here are similar to what we configured in C_hapter 1.1.1 Silver Database_.
+We will now create our gold database, where the data is made ready for consumption. The steps here are similar to what we configured in _Chapter 1.1.1 Silver Database_.
 
 -   Select the (1) **Develop** tab to the left, select the (2) **+ button,** and create a new (3) **Notebook**.
 
@@ -258,6 +263,8 @@ We will now create our gold database, where the data is made ready for consumpti
 -   To begin using this new Notebook, attach an Apache Spark Pool by selecting the (1) **Attach to** dropdown. Select the provisioned (2) S**park pool (Small)**.
 
 ![](https://cdn-images-1.medium.com/max/800/1*aah_j2UamuwlwUIT9yW3eQ.png)
+
+----------
 
 **1.2.1.1 Gold Lake Database**
 
@@ -279,6 +286,8 @@ CREATE DATABASE IF NOT EXISTS gold;
 
 ![](https://cdn-images-1.medium.com/max/800/1*0h94ePg9DPqeQEtp9uSx7A.png)
 
+----------
+
 **1.2.1.2 Gold Lake Database Delta Tables**
 
 -   Within the Notebook **Setup Gold Database** code field, add the following SQL code to create the delta tables in the Gold Lakedatabase.
@@ -291,7 +300,7 @@ USING DELTA
 LOCATION 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/ProductSales/';
 ```
 
--   Change the **LOCATION** parameter within the SQL code to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
+-   Change the **LOCATION** parameter within the SQL code to your URI as described in _Chapter 1.1.2 Azure Blob File System_.
 
 ![](https://cdn-images-1.medium.com/max/800/1*hb_j3rbb0tlzkk_RNlZvQg.png)
 
@@ -313,7 +322,7 @@ LOCATION 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/Pro
 DESCRIBE HISTORY 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/ProductSales/';
 ```
 
--   Within the SQL code above change the **abfss URI** to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
+-   Within the SQL code above change the **abfss URI** to your URI as described in _Chapter 1.1.2 Azure Blob File System_.
 
 ![](https://cdn-images-1.medium.com/max/800/1*NuXYIbsEh9v4EV9nZFSrug.png)
 
@@ -327,6 +336,8 @@ Once the code has run you will see the change operations WRITE (the initial trig
 
 ![](https://cdn-images-1.medium.com/max/800/1*wek6CxytaXBU9Bp4ZJ-3nw.png)
 
+----------
+
 **1.2.1.4 Optimization (Z-Ordering)**
 
 Z-ordering will allow for greater read performance by taking advantage of data skipping. One or multiple columns can be specified for a Z-order. Ideal column choices are those that are commonly used as filters when reading data.
@@ -338,6 +349,7 @@ Z-ordering will allow for greater read performance by taking advantage of data s
   
 OPTIMIZE gold.productsales ZORDER BY (OrderDate);
 ```
+----------
 
 **1.2.1.5 Time Traveling**
 
@@ -354,9 +366,11 @@ WHERE OrderDate >= '2023-05-01';
 
 ![](https://cdn-images-1.medium.com/max/800/1*byvOL8JLvW1bHiYRMYfuaA.png)
 
-You will now see the same changed data we queried previously in C_hapter 1.1.1 Silver Database_, but transformed based on the transformation activities we implemented in the data flow **DeltaGoldProductSales.**
+You will now see the same changed data we queried previously in _Chapter 1.1.1 Silver Database_, but transformed based on the transformation activities we implemented in the data flow **DeltaGoldProductSales.**
 
 ![](https://cdn-images-1.medium.com/max/800/1*CqxsdP_YwIyWtrKfuZTHkQ.png)
+
+----------
 
 **1.2.1.6 Restoring**
 
@@ -375,7 +389,7 @@ RESTORE gold.productsales TO VERSION AS OF 0;
 
 ![](https://cdn-images-1.medium.com/max/800/1*LU31ZHVWdF4mPT7qZbVYuQ.png)
 
-We can now view this restoration process in our audit log. Re-run the DESCRIBE HISTORY script from C_hapter 1.2.1.3 Audit Logs_. You should now see the RESTORE command in the logs.
+We can now view this restoration process in our audit log. Re-run the DESCRIBE HISTORY script from _Chapter 1.2.1.3 Audit Logs_. You should now see the RESTORE command in the logs.
 
 **_NOTE: Restoring is database-specific. If you restore a version within the gold database, you will also have to do so manually in the silver database._**
 
