@@ -97,12 +97,13 @@ This URI will be used in the **LOCATION** variable in the next code script.
 -   Go back to your Azure Synapse Workspace.
 -   Within the Notebook **Setup Silver Database** code field, add the SQL code below to create the delta table.
 
+```sql
 %%sql  
   
 CREATE TABLE IF NOT EXISTS silver.productsales  
 USING DELTA  
 LOCATION 'abfss://container_name@storage_account_name.dfs.core.windows.net/silver-container/ProductSales/';
-
+```
 
 **_NOTE: The %%sql command explicitly tells the notebook to use the SQL language to run the code._**
 
@@ -146,9 +147,11 @@ Now that the data has been changed, we want to be able to view different version
 
 In the audit log, you will see the operations we executed after manually changing the data in _Part 4, Chapter 2.3 Data Changes_.
 
+```sql
 %%sql  
   
 DESCRIBE HISTORY 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/silver-container/ProductSales/';
+```
 
 -   Within the SQL code above change the **abfss URI** to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
 
@@ -172,10 +175,12 @@ You should see the Changes, specifically the operations that took place and the 
 
 -   Add the following SQL code to view a previous version of your product sales data i.e. **version 0** or the initial state before the manual changes. For the sake of simplicity, we will filter the data.
 
+```sql
 %%sql  
   
 SELECT * FROM silver.productsales VERSION AS OF 0  
 WHERE OrderDate >= '2023-05-01';
+```
 
 -   Select the Run button to run the script.
 
@@ -187,10 +192,12 @@ In **Version 0**, you will **not** see any values, since the previous version (v
 
 -   Change the previous SQL code from **VERSION AS OF 0** to **VERSION AS OF 1** and **run** the script again.
 
+```sql
 %%sql  
   
 SELECT * FROM silver.productsales VERSION AS OF 1  
 WHERE OrderDate >= '2023-05-01';
+```
 
 You will now see the changed data from the overwritten CSV file in _Part 4, Chapter 2.3 Data Changes_ together with the transformations we implemented in data flow **DeltaSilverProductSales.**
 
@@ -222,9 +229,11 @@ Delta Lake maintains a history of all the changes by default. That means over a 
 
 -   Within the Notebook **Setup Silver Database** code field, add the following SQL code to clear historic delta logs.
 
+```sql
 %%sql  
   
 VACUUM silver.productsales;
+```
 
 -   Select the **Run** button to run the script.
 
@@ -254,9 +263,11 @@ We will now create our gold database, where the data is made ready for consumpti
 
 -   Within the Notebook **Setup Gold Database** code field, add the following SQL code to create the database:
 
+```sql
 %%sql  
   
 CREATE DATABASE IF NOT EXISTS gold;
+```
 
 -   Select the Run button to start the Spark Pool and run the script.
 
@@ -272,11 +283,13 @@ CREATE DATABASE IF NOT EXISTS gold;
 
 -   Within the Notebook **Setup Gold Database** code field, add the following SQL code to create the delta tables in the Gold Lakedatabase.
 
+```sql
 %%sql  
   
 CREATE TABLE IF NOT EXISTS gold.productsales  
 USING DELTA  
 LOCATION 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/ProductSales/';
+```
 
 -   Change the **LOCATION** parameter within the SQL code to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
 
@@ -294,9 +307,11 @@ LOCATION 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/Pro
 
 -   Add the following SQL code to view the change history of your product data i.e., the data that we manually changed in _Part 4, Chapter 2.3 Data Changes_.
 
+```sql
 %%sql  
   
 DESCRIBE HISTORY 'abfss://dlssdspocfs1@dlssdspoc.dfs.core.windows.net/gold-container/ProductSales/';
+```
 
 -   Within the SQL code above change the **abfss URI** to your URI as described in C_hapter 1.1.2 Azure Blob File System_.
 
@@ -318,18 +333,22 @@ Z-ordering will allow for greater read performance by taking advantage of data s
 
 -   Add the following SQL code to implement Z-ordering optimization using the **OrderDate** column.
 
+```sql
 %%sql  
   
 OPTIMIZE gold.productsales ZORDER BY (OrderDate);
+```
 
 **1.2.1.5 Time Traveling**
 
 -   Add the following SQL code to view **version 1** of your product sales data.
 
+```sql
 %%sql  
   
 SELECT * FROM gold.productsales VERSION AS OF 1  
 WHERE OrderDate >= '2023-05-01';
+```
 
 -   Select the **Run** button to run the script.
 
@@ -346,9 +365,11 @@ Let’s assume, we are not happy with the changes made and would like to revert 
 -   Select the **+ Code** button, to add a new code field to the Notebook.
 -   Add the following SQL code to restore **version 0** as the primary  data structure.
 
+```sql
 %%sql  
   
 RESTORE gold.productsales TO VERSION AS OF 0;
+```
 
 -   Select the **Run** button to run the script.
 
@@ -365,10 +386,12 @@ Let’s verify that we have managed to restore version 0.
 -   Select the **+ Code** button, to add a new code field to the Notebook.
 -   Add the following SQL code to view the data.
 
+```sql
 %%sql  
   
 SELECT * FROM gold.productsales VERSION AS OF 3  
 WHERE OrderDate >= '2023-05-01';
+```
 
 -   Select the **Run** button to run the script.
 
