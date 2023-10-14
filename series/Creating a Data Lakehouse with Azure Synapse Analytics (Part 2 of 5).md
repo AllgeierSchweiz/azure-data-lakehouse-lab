@@ -44,7 +44,7 @@ All files, including the ARM template, can be found in the GitHub repository men
 
 #### 3.1 Azure Account & Subscription
 
-The Azure Account you created in the series [**Creating a Free Azure Account**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md) is yours and automatically grants you the **Owner** role to the Azure Subscription.
+The Azure Account you created in the series [**_Creating a Free Azure Account_**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md) is yours and automatically grants you the **Owner** role to the Azure Subscription.
 
 The automatically provisioned Azure Subscription is named **Azure Subscription 1.**
 
