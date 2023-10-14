@@ -1,6 +1,4 @@
-----------
-
-### Creating a Data Lakehouse with Azure Synapse Analytics (Part 3 of 5)
+# Creating a Data Lakehouse with Azure Synapse Analytics (Part 3 of 5)
 
 ![](https://cdn-images-1.medium.com/max/800/1*VHQ1XmsdtvpnaGo01JsHsg.png)
 
@@ -24,13 +22,19 @@ Once selected, a new webpage will open, launching Azure Synapse Studio. You will
 
 ![](https://cdn-images-1.medium.com/max/800/1*aXV-Zy1xTMV88xI94BacgQ.png)
 
+----------
+
 ### 2. Create Azure Synapse Analytics Pipelines
 
 You will create two Data Flows using Synapse pipelines. These Data Flows will move the data in the bronze container into the silver container and from the silver container into the gold container. Each Data Flow will transform the data before copying it into each container in the Delta Format.
 
+----------
+
 #### 2.1 Transform Data into Delta Format
 
 The Delta format is an open-format storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions, time-traveling capabilities, DML operations, and many [more features](https://delta.io/) to Apache Spark. The Delta format stores the data in a parquet file format while also maintaining transaction logs and statistics to provide features and performance improvement over standard parquet.
+
+----------
 
 **2.1.1 Data Flows**
 
@@ -91,6 +95,8 @@ The debug mode allows for interactive testing of transformation logic against a 
 ![](https://cdn-images-1.medium.com/max/800/1*QunN94CjeZAPVckXW0f-vw.png)
 
 The **Debug time to live** is the amount of time that the integration runtime will wait after your last data preview before automatically shutting down your debug cluster. To avoid billing for the entire TTL, you can shut down the debug session when you are finished working.
+
+----------
 
 #### 2.1.1.1 DeltaSilverProductSales
 
@@ -216,6 +222,8 @@ We now need to configure the second Data Flow called **DeltaGoldProductSales** s
 A banner will appear confirming that the content was published.
 
 ![](https://cdn-images-1.medium.com/max/800/1*V32mMjreX3SLZE3Z5vJMFA.png)
+
+----------
 
 #### 2.1.1.2 DeltaGoldProductSales
 
@@ -350,6 +358,8 @@ Azure Synapse Pipelines allow for event-based triggers, that start the pipeline 
 -   The status of both data flows should change to Succeeded after approximately **3–5 minutes**.
 
 ![](https://cdn-images-1.medium.com/max/800/1*D2WCJYg1JkKrqH89eJ4q8w.png)
+
+----------
 
 #### 2.3 Data Changes
 
