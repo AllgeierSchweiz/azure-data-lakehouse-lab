@@ -1,6 +1,4 @@
-----------
-
-### Creating a Data Lakehouse with Azure Synapse Analytics (Part 2 of 5)
+# Creating a Data Lakehouse with Azure Synapse Analytics (Part 2 of 5)
 
 ![](https://cdn-images-1.medium.com/max/800/1*VHQ1XmsdtvpnaGo01JsHsg.png)
 
@@ -164,6 +162,8 @@ You will be brought to the resource group where the resources you created using 
 Before continuing with the setup of our infrastructure, we need to make sure we have given ourselves the right permissions to access the provisioned resources. Additionally, we also need to create the file directories that host our bronze, silver, and gold layers in the Azure Data Lake Storage.
 
 The ARM template makes sure that you, the person deploying the Azure resources, have the necessary permissions to access the resources. But there is one additional role that needs to be granted manually in the Azure Storage account and that is the **Storage Blob Data Contributor** role.
+
+----------
 
 **3.4.1 Role Assignment**
 
