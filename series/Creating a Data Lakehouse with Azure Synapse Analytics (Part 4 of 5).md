@@ -95,11 +95,13 @@ This URI will be used in the **LOCATION** variable in the next code script.
 -   Go back to your Azure Synapse Workspace.
 -   Within the Notebook **Setup Silver Database** code field, add the SQL code below to create the delta table.
 
+```sql
 %%sql  
   
 CREATE TABLE IF NOT EXISTS silver.productsales  
 USING DELTA  
 LOCATION 'abfss://container_name@storage_account_name.dfs.core.windows.net/silver-container/ProductSales/';
+```
 
 **_NOTE: The %%sql command explicitly tells the notebook to use the SQL language to run the code._**
 
