@@ -9,7 +9,7 @@ The following prerequisites must be met to successfully starting this series:
 -   You must be connected to the internet.
 -   You should use two monitors **(HIGHLY RECOMMENDED)**
 -   You have Microsoft Edge or any other reliable browser installed.
--   You must have created a [free Azure account](https://azure.microsoft.com/en-us/free/) (see [**Creating a Free Azure Account**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md)) or have access to an Azure account.
+-   You must have created a [free Azure account](https://azure.microsoft.com/en-us/free/) (see [**_Creating a Free Azure Account_**](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Free%20Azure%20Account.md)) or have access to an Azure account.
 -   You must be the **Owner** of the Azure subscription (this is relevant if you are using a company Azure Subscription).
 -   You should have [Power BI Desktop](https://apps.microsoft.com/store/detail/power-bi/9NBLGGGZLXN1?hl=de-ch&gl=ch&rtc=1) installed **(OPTIONAL)**.
 
