@@ -54,7 +54,7 @@ The automatically provisioned Azure Subscription is named **Azure Subscription 1
 
 #### 3.2 Register Resource Providers
 
-Within the Subscription **Azure subscription 1**, we need to register the resource provider **Microsoft. Synapse, Microsoft.Sql,** and **Microsoft.Network** to the subscription**.**
+Within the Subscription **Azure subscription 1**, we need to register the resource provider **Microsoft. Synapse, Microsoft.Sql,** and **Microsoft.Network** to the subscription.
 
 For additional information regarding what a resource provider is and the different types, see [Azure resource providers and types](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types).
 
