@@ -156,7 +156,7 @@ The necessary data and support files used for the workshop can be found in a zip
 
 Download and unzip the file on your local computer.
 
-To create Azure resources, you will require an Azure account. You can start a free 30 day account, by following the documentation found [here][Creating-a-free-azure-account-part-1]
+To create Azure resources, you will require an Azure account. You can start a free 30 day trial, by following the documentation found [here][Creating-a-free-azure-account-part-1]
 
 Have fun!
 
