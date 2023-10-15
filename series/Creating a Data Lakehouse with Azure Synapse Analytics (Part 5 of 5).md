@@ -59,7 +59,7 @@ We require the SQL Serverless Pool endpoint for Azure Synapse.
 
 ![](https://cdn-images-1.medium.com/max/800/1*imL_WW3sDWGdxtQ7vj4dqA.png)
 
--   A new window will open asking for the credentials. Select **Microsoft account**, select **Sign in,** and select the **Connect** button.
+-   A new window will open asking for the credentials. Select (1) **Microsoft account**, select (2) **Sign in,** and select the (3) **Connect** button.
 
 ![](https://cdn-images-1.medium.com/max/800/1*33ZMX7AOWZbveD6Gl4DAoQ.png)
 
