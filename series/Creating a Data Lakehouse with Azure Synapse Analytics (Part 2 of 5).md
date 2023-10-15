@@ -107,14 +107,14 @@ Once the template opens, there will be several entries that need to be manually 
 -   (2) In the **Subscription** drop-down, select **Azure Subscription 1**.
 -   (3) Create a new **Resource Group** by selecting the **Create New** button by the Resource Group entry.
 -   (4) Add a new **Resource Group name** with the following makeup:  
-    - _rg1_ **[random selection of letters and numbers of your choosing]** _datalakehouse_ **(**e.g., rg1dhlxy12datalakehouse**).**
+    - _rg1_ **[random selection of letters and numbers of your choosing - do not copy the example]** _datalakehouse_ **(**e.g., rg1dhlxy12datalakehouse**).**
 -   (5) Select **OK**
 
 ![](https://cdn-images-1.medium.com/max/800/1*SXMf64R8BaOfJvXlReJaMw.png)
 
 -   (6) Set the **Region** (this is based on your preference. If you’re in Europe,  input **West Europe.** A list of available regions can be found [here](https://gist.github.com/ausfestivus/04e55c7d80229069bf3bc75870630ec8)**).**
 -   (7) Leave the **Location** as **[resourceGroup().location]**.
--   (8) Set the **Company Tla** to **[random selection of letters and numbers of your choosing] (**e.g., dhlxy12**).**
+-   (8) Set the **Company Tla** to **[random selection of letters and numbers of your choosing - do not copy the example] (**e.g., dhlxy12**).**
 -   (9) Leave the **Allow All Connections** as **true**.
 -   (10) Leave the **Spark Deployment** as **true**.
 -   (11) Set the **Spark Node** **Size** as **Small**_._
