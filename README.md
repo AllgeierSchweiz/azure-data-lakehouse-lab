@@ -142,7 +142,7 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 
 The complete workshop documentation is split into 5 parts:
 
-[Part 1][Creating-a-modern-data-lakehouse-series-part-1]: Whats is a Data Lakehouse, what are the challenges and when does it make sense to implement this architecture?
+[Part 1][Creating-a-modern-data-lakehouse-series-part-1]: What is a Data Lakehouse, what are the challenges and when does it make sense to implement this architecture?
 
 [Part 2][Creating-a-modern-data-lakehouse-series-part-2]: Preparations and provisioning of the Azure resources to create a Data Lakehouse.
 
