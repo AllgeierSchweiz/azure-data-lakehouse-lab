@@ -140,7 +140,11 @@ With additional configurations Apache Hudi or Apache Iceberg may also be used in
 <!-- FILES -->
 ## Documentation, Data & Support Files
 
-The complete workshop, with all the necessary files can be found in a zip file [here][Creating-a-modern-data-lakehouse-zip]. 
+The complete workshop documentation is split into 5 parts:
+
+[Part 1][Creating-a-modern-data-lakehouse-series-part-1]
+
+The necessary data and support files used for the workshop can be found in a zip file [here][Creating-a-modern-data-lakehouse-zip]. 
 
 Download and unzip the file on your local computer.
 
@@ -208,6 +212,7 @@ The following documentation was used to source the information contained in this
 [JQuery-url]: https://jquery.com 
 [Creating-a-modern-data-lakehouse-zip]: https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/raw/main/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.zip
 [Creating-a-modern-data-lakehouse-pdf]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/documentation/Creating-a-Modern-Data-Lakehouse-with-Azure-Synapse.pdf
+[Creating-a-modern-data-lakehouse-series-part-1]: https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/series/Creating%20a%20Data%20Lakehouse%20with%20Azure%20Synapse%20Analytics%20(Part%201%20of%205).md
 [FactProductCategoryPredictions-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductCategoryPredictions.csv
 [FactProductSales-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/FactProductSales.csv
 [FactProductSales-changes-csv]: https://downgit.github.io/#/home?url=https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab/blob/main/data/changes/FactProductSales.csv
