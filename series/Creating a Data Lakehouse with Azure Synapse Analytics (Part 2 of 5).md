@@ -94,7 +94,7 @@ A new window showing the information about the selected subscription will appear
 
 You will now create the Azure Resources required to set up the Data Lakehouse. We will use an Azure Resource Management (ARM) template to help provision the required Azure resources more efficiently.
 
-**_CAREFUL: Before you begin, make sure you register all the resource providers (Microsoft.Sql, Microsoft.Synapse & Microsoft.Network)_ _as shown in chapter 3.2 Register Resource Providers._**
+**_CAREFUL: Before you begin, make sure you register all the resource providers (Microsoft.Sql, Microsoft.Synapse & Microsoft.Network)_ _as shown in Chapter 3.2 Register Resource Providers._**
 
 -   Open the GitHub Repository located [here](https://github.com/AllgeierSchweiz/azure-data-lakehouse-lab) and select **Deploy to Azure**. This will call the _azure.portal.com_ website and start the ARM template provided.
 
